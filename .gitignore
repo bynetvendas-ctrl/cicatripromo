@@ -1,0 +1,8 @@
+.env
+node_modules/
+.DS_Store
+*.log
+scratch/
+*.zip
+.netlify_local_db.json
+.leads_cache.json

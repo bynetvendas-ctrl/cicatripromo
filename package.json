@@ -1,0 +1,13 @@
+{
+  "name": "cicatribem-store",
+  "version": "1.0.0",
+  "description": "Cicatribem Storefront & Painel Admin (Netlify Blobs)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.0"
+  }
+}

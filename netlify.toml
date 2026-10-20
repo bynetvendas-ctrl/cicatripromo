@@ -1,0 +1,120 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  included_files = ["store.config.json", "db.js"]
+
+[build.environment]
+  SECRETS_SCAN_ENABLED = "false"
+
+[[redirects]]
+  from = "/collections"
+  to = "/collections/todos-os-produtos.html"
+  status = 301
+
+[[redirects]]
+  from = "/collections/"
+  to = "/collections/todos-os-produtos.html"
+  status = 301
+
+[[redirects]]
+  from = "/products"
+  to = "/collections/todos-os-produtos.html"
+  status = 301
+
+[[redirects]]
+  from = "/products/"
+  to = "/collections/todos-os-produtos.html"
+  status = 301
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/"
+  to = "/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/checkout"
+  to = "/checkout.html"
+  status = 200
+
+[[redirects]]
+  from = "/checkout/"
+  to = "/checkout.html"
+  status = 200
+
+[[redirects]]
+  from = "/cart"
+  to = "/cart.html"
+  status = 200
+
+[[redirects]]
+  from = "/cart/"
+  to = "/cart.html"
+  status = 200
+
+[[redirects]]
+  from = "/search"
+  to = "/search.html"
+  status = 200
+
+[[redirects]]
+  from = "/search/"
+  to = "/search.html"
+  status = 200
+
+[[redirects]]
+  from = "/api/zedy/create-checkout"
+  to = "/.netlify/functions/zedy-checkout"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/checkout/process"
+  to = "/.netlify/functions/checkout-process"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/checkout/status/:id"
+  to = "/.netlify/functions/checkout-status?id=:id"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/_serverFn/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/products/:slug"
+  to = "/products/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/collections/:slug"
+  to = "/collections/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/pages/:slug"
+  to = "/pages/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/policies/:slug"
+  to = "/policies/:slug.html"
+  status = 200

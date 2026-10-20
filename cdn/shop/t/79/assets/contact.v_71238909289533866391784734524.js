@@ -1,0 +1,2 @@
+class ProductAddons extends PopupBase{constructor(){super(),this.productPopupDiv=this.querySelector(".product-addons__content"),this.init()}init(){this.productPopupDiv&&this.addEventListener("click",this.onClick.bind(this))}onClick(){const html=this.productPopupDiv;html&&(html.classList.remove("hidden"),this.initPopup(html,`<h3 class="title-popup h5 my-0 px-20 px-md-30 py-20 border-bottom">${this.dataset?.textHeader}</h3>`))}}customElements.define("product-addons",ProductAddons);
+//# sourceMappingURL=/cdn/shop/t/79/assets/contact.js.map?v=71238909289533866391784734524

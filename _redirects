@@ -1,0 +1,28 @@
+# Folder redirects to prevent 404
+/collections /collections/todos-os-produtos.html 301
+/collections/ /collections/todos-os-produtos.html 301
+/products /collections/todos-os-produtos.html 301
+/products/ /collections/todos-os-produtos.html 301
+
+# Clean URLs
+/admin /admin.html 200
+/admin/ /admin.html 200
+/checkout /checkout.html 200
+/checkout/ /checkout.html 200
+/cart /cart.html 200
+/cart/ /cart.html 200
+/search /search.html 200
+/search/ /search.html 200
+
+# Dynamic API functions
+/api/zedy/create-checkout /.netlify/functions/zedy-checkout 200!
+/api/checkout/process /.netlify/functions/checkout-process 200!
+/api/checkout/status/:id /.netlify/functions/checkout-status?id=:id 200!
+/_serverFn/* /.netlify/functions/api/:splat 200!
+/api/* /.netlify/functions/api/:splat 200!
+
+# Clean route rewrites for static pages
+/products/:slug /products/:slug.html 200
+/collections/:slug /collections/:slug.html 200
+/pages/:slug /pages/:slug.html 200
+/policies/:slug /policies/:slug.html 200

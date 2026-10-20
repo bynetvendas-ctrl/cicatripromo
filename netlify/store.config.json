@@ -1,0 +1,44 @@
+{
+  "storeId": "cicatribem",
+  "storeName": "Cicatribem",
+  "legalName": "Cicatribem Dermocosméticos LTDA",
+  "cnpj": "28.632.062/0001-35",
+  "email": "atendimento@cicatribem.com.br",
+  "phone": "(11) 99999-9999",
+  "whatsapp": "5511999999999",
+  "businessHours": "Segunda a Sexta, das 08h às 18h",
+  "address": {
+    "street": "Av. Paulista",
+    "number": "1000",
+    "complement": "",
+    "neighborhood": "Bela Vista",
+    "city": "São Paulo",
+    "state": "SP",
+    "zipcode": "01310-100"
+  },
+  "shipping": {
+    "freeShippingMinDays": 3,
+    "freeShippingMaxDays": 5,
+    "sedexMinDays": 1,
+    "sedexMaxDays": 2
+  },
+  "activeGateway": "axxon",
+  "axxon": {
+    "baseUrl": "https://api.axxonpay.com.br",
+    "publicKey": "pk_ad7b3add5e8e99638b17fc5db7492dbf",
+    "secretKey": "sk_8e1d172fd4a1d5d1d3a85018377cf442a0361c8e035fc9d4510de3bf49b6075e"
+  },
+  "pushinpay": {
+    "token": ""
+  },
+  "propay": {
+    "baseUrl": "https://api.axxonpay.com.br",
+    "clientId": "pk_ad7b3add5e8e99638b17fc5db7492dbf",
+    "clientSecret": "sk_8e1d172fd4a1d5d1d3a85018377cf442a0361c8e035fc9d4510de3bf49b6075e"
+  },
+  "meta": {
+    "pixelId": "",
+    "capiToken": ""
+  },
+  "adminPassword": "admin"
+}
